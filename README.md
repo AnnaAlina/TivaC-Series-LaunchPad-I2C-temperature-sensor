@@ -19,12 +19,15 @@ By changing the output expectation, the array automatically displays this new fo
 
 Because the decimal place is getting omitted entirely, this code can just be deleted. Next, the correct port and pin that will be used for the LED has to be initialized. For this lab, the onboard RGB LED was implemented so GPIO PORT F with pins 1, 2, and 3 were enabled. To work with the data from the temperature sensor, the code to turn on the RGB LED is nested within the Read_temp function. 
 
+
 if(data[0] >= 0x33){
 GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 4);
+
  // LED Blue on Launchpad
      }else{
      GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 8); // LED green
      }
 }
+
 The temperature of 30°C was chosen with the hexadecimal representation of 0x33. This states that when the 3 is in the 10’s position of the ASCII conversion, the RGB LED changed from green, which it will automatically be green if it is under 30°C, to blue.
 
