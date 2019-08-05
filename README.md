@@ -1,0 +1,2 @@
+# TivaC-Series-LaunchPad-I2C-temperature-sensor
+In its simplest form, this lab is designed to teach individuals how to utilize the UART to communicate with the serial monitor while using the I2C bus to transmit and receive data from the Digilent Orbit Board’s onboard temperature sensor. It will introduce the individuals with concepts involving UART and communicating through the serial interface PuTty.
