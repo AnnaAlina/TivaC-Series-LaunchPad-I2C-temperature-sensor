@@ -21,11 +21,10 @@ Because the decimal place is getting omitted entirely, this code can just be del
 
 
 if(data[0] >= 0x33){
-GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 4);
-
- // LED Blue on Launchpad
-     }else{
-     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 8); // LED green
+    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 4);     // LED Blue on Launchpad
+     }
+     else{
+          GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 8); // LED green
      }
 }
 
